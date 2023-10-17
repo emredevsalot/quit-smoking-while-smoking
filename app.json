@@ -34,6 +34,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "ab30316e-bd41-4870-a14a-86740f6a1a91"
+      }
+    },
+    "owner": "emredevsalot"
   }
 }
