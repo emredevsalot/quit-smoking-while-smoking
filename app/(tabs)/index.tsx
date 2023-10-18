@@ -98,7 +98,6 @@ export default function TabOneScreen() {
     ) {
       newHabitData.cooldownMinutes += 1;
     }
-    newHabitData.cooldownMinutes += 1;
 
     setHabitData(newHabitData);
 
