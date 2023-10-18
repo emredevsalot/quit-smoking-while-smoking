@@ -7,9 +7,6 @@ import moment from 'moment';
 import { StyleSheet, Button } from 'react-native';
 import { Text, View } from '../../components/Themed';
 
-// // WEB_NOTIFICATION_ERROR
-// import * as Notifications from 'expo-notifications';
-
 export default function TabOneScreen() {
   const INITIAL_COOLDOWN_MINUTES = 35;
   const [habitData, setHabitData] = useState({
@@ -62,20 +59,9 @@ export default function TabOneScreen() {
     }
   };
 
-  // Request permission to send notifications (if not already granted).
-  // // WEB_NOTIFICATION_ERROR
-  // const getNotificationPermission = async () => {
-  //   const { status } = await Notifications.requestPermissionsAsync();
-  //   if (status !== 'granted') {
-  //     console.warn('Permission to receive notifications was denied.');
-  //   }
-  // };
-
   // Load habit data and check permissions when the component mounts.
   useEffect(() => {
     loadHabitData();
-    // // WEB_NOTIFICATION_ERROR
-    // getNotificationPermission();
   }, []);
 
   const handleResetButtonClick = async () => {
@@ -118,34 +104,7 @@ export default function TabOneScreen() {
 
     // Save updated habit data to AsyncStorage.
     AsyncStorage.setItem('habitData', JSON.stringify(newHabitData));
-
-    // Schedule a notification for after the cooldown.
-    // // WEB_NOTIFICATION_ERROR
-    // const trigger = new Date(newHabitData.lastSmokeTime + newHabitData.cooldownMinutes * 60 * 1000);
-    // scheduleNotification(trigger);
   };
-
-  // Function to schedule a notification
-  // // WEB_NOTIFICATION_ERROR
-  // const scheduleNotification = (trigger: Date) => {
-  //   console.log('Set notification for:', moment(trigger.getTime()).format('hh:mm:ss a'));
-
-  //   Notifications.setNotificationHandler({
-  //     handleNotification: async () => ({
-  //       shouldShowAlert: true,
-  //       shouldPlaySound: true,
-  //       shouldSetBadge: true,
-  //     }),
-  //   });
-
-  //   Notifications.scheduleNotificationAsync({
-  //     content: {
-  //       title: 'Time to Smoke Again!!',
-  //       body: 'You can smoke now.',
-  //     },
-  //     trigger,
-  //   });
-  // };
 
   return (
     <View style={styles.container}>
