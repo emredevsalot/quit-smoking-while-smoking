@@ -113,17 +113,17 @@ export default function TabOneScreen() {
       </Text>
       <Text>Cooldown: {habitData.cooldownMinutes} minutes</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <Text>Smoke count: {habitData.smokeCount}</Text>
       <Text>
-        Last smoked:{' '}
+        Last cigarette at:{' '}
         {habitData.lastSmokeTime && moment(habitData.lastSmokeTime).format('hh:mm:ss a')}
       </Text>
       <Text>
-        Next cigarette at:{' '}
+        You can smoke at:{' '}
         {moment(habitData.lastSmokeTime + habitData.cooldownMinutes * 60 * 1000).format(
           'hh:mm:ss a',
         )}
       </Text>
+      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <Button title="Smoke" onPress={handleSmokeButtonClick} />
       <Button title="Reset Habit Data" onPress={handleResetButtonClick} />
     </View>
