@@ -1,6 +1,7 @@
 export interface ISmokingData {
   lastSmokeTime: number;
   cooldownMinutes: number;
+  dailyCooldownIncrement: number;
   smokeCount: number;
 }
 

@@ -61,14 +61,14 @@ export default function TabOneScreen() {
       lastSmokeTime: currentTime,
     };
 
-    // Increase cooldown by 1 minute if a new day
-    // has started since the last smoke
+    // Increase cooldown by chosen amount(default: 1 minute)
+    // if a new day has started since the last smoke
     if (
       lastSmokeDate.getFullYear() !== currentSmokeDate.getFullYear() ||
       lastSmokeDate.getMonth() !== currentSmokeDate.getMonth() ||
       lastSmokeDate.getDate() !== currentSmokeDate.getDate()
     ) {
-      updatedSmokingData.cooldownMinutes += 1;
+      updatedSmokingData.cooldownMinutes += smokingData.dailyCooldownIncrement;
     }
 
     setSmokingData(updatedSmokingData);
