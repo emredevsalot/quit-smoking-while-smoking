@@ -7,11 +7,9 @@ import moment from 'moment';
 
 import { Text, View } from '../../components/Themed';
 import { useSmokingData } from '../../providers/SmokingProvider';
-import useSmokingDataLoader from '../../hooks/useSmokingDataLoader';
 
 export default function TabOneScreen() {
   const { smokingData, setSmokingData } = useSmokingData();
-  useSmokingDataLoader({ setSmokingData });
 
   const [timeLeft, setTimeLeft] = useState(smokingData.cooldownMinutes * 60 * 1000);
   const [isCooldownCompleted, setIsCooldownCompleted] = useState(false);

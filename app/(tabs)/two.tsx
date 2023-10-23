@@ -4,14 +4,12 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { Text, View } from '../../components/Themed';
 import { useSmokingData } from '../../providers/SmokingProvider';
-import useSmokingDataLoader from '../../hooks/useSmokingDataLoader';
 
 import { DefaultSmokingData } from '../../constants/DefaultSmokingData';
 import { ISmokingData } from '../../types';
 
 export default function TabTwoScreen() {
   const { smokingData, setSmokingData } = useSmokingData();
-  useSmokingDataLoader({ setSmokingData });
 
   // States to keep track of the setting input fields and error message
   const [dailyCooldownIncrement, setDailyCooldownIncrement] = useState<number>(
