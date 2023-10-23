@@ -6,7 +6,7 @@ import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native
 import { useFonts } from 'expo-font';
 import { SplashScreen, Stack } from 'expo-router';
 
-import SmokingProvider from '../providers/SmokingProvider';
+import { SmokingProvider } from '../providers/SmokingProvider';
 
 export {
   // Catch any errors thrown by the Layout component.

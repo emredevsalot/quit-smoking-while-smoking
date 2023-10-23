@@ -1,18 +1,16 @@
 // TODO: Button will come from Themed components as well.
-import { useState, useEffect, useContext } from 'react';
+import { useState, useEffect } from 'react';
 import { StyleSheet, Button } from 'react-native';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import moment from 'moment';
 
 import { Text, View } from '../../components/Themed';
-import { SmokingContext } from '../../providers/SmokingProvider';
+import { useSmokingData } from '../../providers/SmokingProvider';
 import useSmokingDataLoader from '../../hooks/useSmokingDataLoader';
 
-import { SmokingContextType } from '../../types';
-
 export default function TabOneScreen() {
-  const { smokingData, setSmokingData } = useContext(SmokingContext) as SmokingContextType;
+  const { smokingData, setSmokingData } = useSmokingData();
   useSmokingDataLoader({ setSmokingData });
 
   const [timeLeft, setTimeLeft] = useState(smokingData.cooldownMinutes * 60 * 1000);

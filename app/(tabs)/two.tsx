@@ -1,16 +1,16 @@
-import { useState, useEffect, useContext } from 'react';
+import { useState, useEffect } from 'react';
 import { StyleSheet, Button, TextInput } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { Text, View } from '../../components/Themed';
-import { SmokingContext } from '../../providers/SmokingProvider';
+import { useSmokingData } from '../../providers/SmokingProvider';
 import useSmokingDataLoader from '../../hooks/useSmokingDataLoader';
 
 import { DefaultSmokingData } from '../../constants/DefaultSmokingData';
-import { ISmokingData, SmokingContextType } from '../../types';
+import { ISmokingData } from '../../types';
 
 export default function TabTwoScreen() {
-  const { smokingData, setSmokingData } = useContext(SmokingContext) as SmokingContextType;
+  const { smokingData, setSmokingData } = useSmokingData();
   useSmokingDataLoader({ setSmokingData });
 
   // States to keep track of the setting input fields and error message
