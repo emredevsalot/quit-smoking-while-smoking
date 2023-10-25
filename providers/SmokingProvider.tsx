@@ -15,6 +15,9 @@ export const SmokingProvider = ({ children }: { children: ReactNode }) => {
       const storedData = await AsyncStorage.getItem('smokingData');
       if (storedData) {
         setSmokingData(JSON.parse(storedData));
+      } else {
+        setSmokingData(DefaultSmokingData);
+        AsyncStorage.setItem('smokingData', JSON.stringify(DefaultSmokingData));
       }
     } catch (error) {
       console.error('Error loading smoking data:', error);
