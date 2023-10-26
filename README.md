@@ -22,4 +22,4 @@ Contributions to this project are welcome. If you have ideas for improvements or
 
 ## If you want to try it out
 
-Right I can only export android builds to test it out, here's the [latest APK](https://expo.dev/artifacts/eas/7cfpNnC9wpNyRPAp27M4QN.apk) that's been generated with Expo EAS.
+Right I can only export android builds to test it out, here's the [latest APK](https://expo.dev/artifacts/eas/dQzPfVJ8cRE7wEfB2r6Pca.apk) that's been generated with Expo EAS.
