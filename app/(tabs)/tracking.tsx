@@ -8,7 +8,7 @@ import moment from 'moment';
 import { Text, View } from '../../components/Themed';
 import { useSmokingData } from '../../providers/SmokingProvider';
 
-export default function TabOneScreen() {
+export default function TrackingScreen() {
   const { smokingData, setSmokingData } = useSmokingData();
 
   const [timeLeft, setTimeLeft] = useState(smokingData.cooldownMinutes * 60 * 1000);

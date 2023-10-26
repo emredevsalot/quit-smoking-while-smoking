@@ -8,7 +8,7 @@ import { useSmokingData } from '../../providers/SmokingProvider';
 import { ISmokingData } from '../../types';
 import moment from 'moment';
 
-export default function TabMorningScreen() {
+export default function MorningScreen() {
   const { smokingData, setSmokingData } = useSmokingData();
 
   const [timeLeft, setTimeLeft] = useState(smokingData.morningCooldownMinutes * 60 * 1000);

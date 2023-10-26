@@ -8,7 +8,7 @@ import { useSmokingData } from '../../providers/SmokingProvider';
 import { DefaultSmokingData } from '../../constants/DefaultSmokingData';
 import { ISmokingData } from '../../types';
 
-export default function TabTwoScreen() {
+export default function SettingsScreen() {
   const { smokingData, setSmokingData } = useSmokingData();
 
   // States to keep track of the setting input fields and error message
