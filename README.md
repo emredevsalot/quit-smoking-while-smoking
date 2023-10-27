@@ -11,6 +11,7 @@
 ## Key Features
 
 **⏳ Gradual Reduction:** The app gently increases the time between cigarettes to reduce your smoking habit over time.<br/>
+**🌞 Morning Cigarette Delay:** It's advised to delay the first cigarette of the day as much as possible. We enhance and keep track of that as well.<br/>
 **🎯 Customizable:** You choose your initial smoking frequency and daily cooldown increase, making the process more adaptable to your needs.<br/>
 **😌 Anxiety-Free:** Quit smoking at your own pace without the pressure of strict goals.<br/>
 **🤝 Supportive Environment:** The app provides a supportive and non-judgmental space to help you quit smoking.<br/>
