@@ -1,6 +1,6 @@
 # Quit Smoking While Smoking
 
-![GitHub (3)](https://github.com/emredevsalot/quit-smoking-while-smoking/assets/72770244/b189d7c9-e38f-46ac-9d37-8f27ae839c45)
+![Final](https://github.com/emredevsalot/quit-smoking-while-smoking/assets/72770244/720c1ae3-b919-41b9-a6db-0fb1cbc04657)
 
 🚭 An app that uses the **exposure therapy** method to reduce smoking **without anxiety**.
 
