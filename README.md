@@ -14,12 +14,15 @@
 **🎯 Customizable:** You choose your initial smoking frequency and daily cooldown increase, making the process more adaptable to your needs.<br/>
 **😌 Anxiety-Free:** Quit smoking at your own pace without the pressure of strict goals.<br/>
 **🤝 Supportive Environment:** The app provides a supportive and non-judgmental space to help you quit smoking.<br/>
-**🆘 Command Assistance(In development):** If you encounter a particularly challenging moment, you can use commands like "Keep this cooldown for 2 days" or "Decrease cooldown by 2 minutes" to help you through.<br/>
 
-## Contributing
+## Contributing & Publishing
 
-Contributions to this project are welcome. If you have ideas for improvements or new features, please submit a pull request or open an issue on the GitHub repository.
+Right now, I'm only using the app with the APK below. I'm not in a place to be able to publish the app to the App Store and Google Play.
 
-## If you want to try it out
+If anyone is interested in or already publishing such self-improvement apps in these platforms, please reach out to me through [LinkedIn](https://www.linkedin.com/in/emredevsalot/) or [Twitter.](https://twitter.com/emredevsalot)
 
-Right I can only export android builds to test it out, here's the [latest APK](https://expo.dev/artifacts/eas/dQzPfVJ8cRE7wEfB2r6Pca.apk) that's been generated with Expo EAS.
+(App is not and will not be monetized with IAP, it's for a good cause, if we can get them to the stores, I want to make a ProductHunt launch, then it might be beneficial for a couple of people at least.)
+
+## If you want to try it out (Android)
+
+Here's the [latest APK](https://expo.dev/artifacts/eas/kiyP8cE4AxuubYxusWxPE6.apk) that's been generated with Expo EAS.
